@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var happyThreadPool = HappyPack.ThreadPool({size: os.cpus().length})
 
 module.exports = {
-  entry: {main: './src/app.js'},
+  entry: {main: './src/app.ts'},
   output: {
     path: path.join(__dirname, 'build'),
     filename: '[name].bundle.js',
@@ -14,7 +14,7 @@ module.exports = {
   },
   mode: process.env.NODE_ENV,
   resolve: {
-    extensions: ['.js','.jsx']
+    extensions: ['.js','.jsx', '.ts', '.tsx']
   },
   devtool: 'source-map',
   module: {
@@ -46,5 +46,11 @@ module.exports = {
     splitChunks: {
       chunks: 'all'
     }
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'build'),
+    compress: true,
+    port: 9000,
+    hot: true
   }
 }

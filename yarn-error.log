@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add preset-react -d
+  /usr/local/bin/node /usr/local/bin/yarn add react-css-module
 
 PATH: 
   /Users/jianglirui/arcfold/arcanist/bin/:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jianglirui/arcfold/arcanist/bin/:/usr/local/opt/go/libexec/bin:/Users/jianglirui/.go/bin:/usr/local/opt/go/libexec/bin:/Users/jianglirui/.go/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.npm.taobao.org/preset-react: Not found
+  Error: https://registry.npm.taobao.org/react-css-module: Not found
       at Request.params.callback [as _callback] (/Users/jianglirui/.config/yarn/global/node_modules/yarn/lib/cli.js:65894:18)
       at Request.self.callback (/Users/jianglirui/.config/yarn/global/node_modules/yarn/lib/cli.js:129018:22)
       at emitTwo (events.js:126:13)
@@ -55,6 +55,7 @@ npm manifest:
       "@babel/preset-env": "^7.3.4",
       "@babel/preset-react": "^7.0.0",
       "@babel/preset-typescript": "^7.3.3",
+      "@types/node": "^11.11.3",
       "babel-loader": "^8.0.5",
       "cross-env": "^5.2.0",
       "happypack": "^5.0.1",
@@ -759,6 +760,11 @@ Lockfile:
     version "4.7.2"
     resolved "http://registry.npm.taobao.org/@types/history/download/@types/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
     integrity sha1-DmcOolTVWSQbbus4lPh1SZHnMiA=
+  
+  "@types/node@^11.11.3":
+    version "11.11.3"
+    resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-11.11.3.tgz#7c6b0f8eaf16ae530795de2ad1b85d34bf2f5c58"
+    integrity sha1-fGsPjq8WrlMHld4q0bhdNL8vXFg=
   
   "@types/prop-types@*":
     version "15.7.0"
